@@ -4,41 +4,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - University Notice Board</title>
-    <link rel="stylesheet" href="../styles/style.css">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f9;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input,
+        textarea {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        .nav {
+            margin-bottom: 20px;
+        }
+
+        .nav a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+    </style>
 </head>
 
 <body>
-    <header>
-        <h1>University Digital Notice Board</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="notices.html">Academic Notices</a></li>
-                <li><a href="exams.html">Exam Schedules</a></li>
-                <li><a href="admissions.html">Admissions</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h2>Contact Us</h2>
-        <p>We are here to help! Reach out to the administration for any queries.</p>
+    <div class="container">
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact</a>
+        </div>
 
-        <section class="contact-info">
-            <h3>General Inquiries</h3>
-            <ul>
-                <li><strong>Email:</strong> info@university.edu</li>
-                <li><strong>Phone:</strong> +92-123-456789</li>
-                <li><strong>Address:</strong> Main Campus, University Road.</li>
-            </ul>
-        </section>
+        <h1>Contact Our DevOps Team</h1>
+        <p>Have questions about our pipeline? Send us a message!</p>
 
-        <section class="support">
-            <h3>Student Support</h3>
-            <p>For portal issues, contact: <a href="mailto:support@university.edu">support@university.edu</a></p>
-        </section>
-    </main>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" placeholder="Your Message"></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
 </body>
 
 </html>
